@@ -15,8 +15,8 @@ a{
 }
 
 header{
-    (r,g,b) value is (250,236,182)
-    background-color: rgb(147,211,174);
+    /* background-color: rgb(147,211,174); */
+    /* background-color: rgb( 250,236,182); */
 }
 
 header>nav{
@@ -27,9 +27,32 @@ header>nav{
 
 nav>ul{
     display: flex;
-    justify-self: space-around;
+}
+
+nav>ul>li{
+    margin: 0 1em;
 }
 
 main{
+    
+}
+
+.backSobre{
     background-color: antiquewhite;
+    padding: 10em;
+}
+.sobre{
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    width: 20em;
+    margin: 0 auto;
+
+
+}
+img{
+    height: 25em;
+}
+
+.infoSobre{
+    margin: 1em 2em;
 }
