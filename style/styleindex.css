@@ -4,7 +4,7 @@
 *{  
     font-family: "Mulish", sans-serif;
     letter-spacing: 0.6px;
-    color: rgba(109, 83, 12, 0.849);
+    
 }
 body{
     margin: 0;
@@ -12,13 +12,18 @@ body{
 }
 
 li{
-    list-style-type: none;   
+    list-style-type: none;  
+    color: black; 
 }
 
 a{
     text-decoration: none;
 }
-
+h1, h2, i{
+    color: rgb(167, 108, 53);
+    /* (r,g,b) value is (143,58,37) */
+    /* (r,g,b) value is (142,78,51) */
+}
 header{
     /* background-color: rgb(147,211,174); */
     /* background-color: rgb( 250,236,182); */
@@ -43,8 +48,13 @@ main{
 }
 
 .backSobre{
-    background-color: antiquewhite;
+    background-image: url('/img/transferir1.jpeg/') ;
+    /* background-image: url('/img/gradient.jpeg') ; */
+    /* background-image: url('/img/Insta_ unfinished.jpeg') ; */
     padding:  10em 10em 0 ;
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
     
 }
 .sobre{
@@ -69,7 +79,7 @@ main{
 }
 
 .social{
-    background-color: rgb(167, 108, 53);
+    background-color: antiquewhite;
     display: flex;
     justify-content: center ;
     align-items: center;
@@ -82,8 +92,12 @@ main{
     margin: 0 1em
 }
 
-
+footer{
+    display: flex;
+    justify-content: space-around;
+}
 footer>p {
     color: rgb(183, 187, 187);
     font-size: 14px;
+    text-align: center;
 }
