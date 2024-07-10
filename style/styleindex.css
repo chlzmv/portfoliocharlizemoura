@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+*{  
+    font-family: "Mulish", sans-serif;
+    letter-spacing: 0.6px;
+    color: rgba(109, 83, 12, 0.849);
+}
 body{
     margin: 0;
 
@@ -34,25 +39,51 @@ nav>ul>li{
 }
 
 main{
-    
+    text-align: center;
 }
 
 .backSobre{
     background-color: antiquewhite;
-    padding: 10em;
+    padding:  10em 10em 0 ;
+    
 }
 .sobre{
     display: flex;
-    background-color:rgb(255, 255, 255);
-    width: 20em;
+    width: 50em;
     margin: 0 auto;
-
-
 }
-img{
-    height: 25em;
+.sobre>img{
+    height: 30em;
 }
 
 .infoSobre{
-    margin: 1em 2em;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 3em;
+    width: 20em;
+}
+
+.backSocial{
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    background-color: rgb(167, 108, 53);
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 770px;
+    height: 2em;
+    padding: 1em;
+}
+
+.social>i,.social>img{
+    margin: 0 1em
+}
+
+
+footer>p {
+    color: rgb(183, 187, 187);
+    font-size: 14px;
 }
