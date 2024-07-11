@@ -1,71 +1,74 @@
+/* Importação de fontes do Google Fonts para Mulish e Libre Franklin */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Estilos globais */
 * {
-    font-family: "Mulish", sans-serif;
-    letter-spacing: 0.6px;
-
+    font-family: "Mulish", sans-serif; /* Define a fonte padrão para todo o documento */
+    letter-spacing: 0.6px; /* Espaçamento entre letras */
 }
 
+/* Reset de estilos para body */
 body {
-
-    height: 100%;
-    margin: 0;
-
+    height: 100%; /* Ocupa toda a altura da viewport */
+    margin: 0; /* Remove margens padrão */
 }
 
-li,
-a {
-    list-style-type: none;
-    color: black;
-    text-decoration: none;
+/* Reset de estilos para listas e links */
+li, a {
+    list-style-type: none; /* Remove marcadores de lista */
+    color: black; /* Cor padrão para links */
+    text-decoration: none; /* Remove sublinhado padrão de links */
 }
 
-h1,
-h2 {
-    color: rgb(128, 40, 26);
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 500;
+/* Estilos para cabeçalhos */
+h1, h2 {
+    color: rgb(128, 40, 26); /* Cor específica para cabeçalhos */
+    font-family: "Noto Sans JP", sans-serif; /* Fonte para cabeçalhos */
+    font-weight: 500; /* Peso da fonte */
 }
 
+/* Estilos para ícones */
 i {
-    color: rgb(250, 250, 250);
+    color: rgb(250, 250, 250); /* Cor para ícones */
 }
 
+/* Wrapper principal */
 .wrapper {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: column; /* Organiza conteúdo em coluna */
+    min-height: 100vh; /* Altura mínima igual à altura da viewport */
 }
 
-
-header>nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
+/* Estilos para o cabeçalho (header) */
+header > nav {
+    display: flex; /* Organiza itens de navegação em linha */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: space-evenly; /* Distribui espaço uniformemente entre itens */
 }
 
-nav>ul {
-    display: flex;
+/* Estilos para a lista de navegação */
+nav > ul {
+    display: flex; /* Organiza itens de lista em linha */
 }
 
-nav>ul>li {
-    margin: 0 1em;
+nav > ul > li {
+    margin: 0 1em; /* Margem entre itens da lista de navegação */
 }
 
+/* Estilos para links na navegação */
 nav a {
     position: relative;
     padding: 5px 0;
 }
 
+/* Efeito de sublinhado nos links ao passar o mouse */
 nav a::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
     background: rgb(128, 40, 26);
-    ;
     transition: width 0.3s;
     position: absolute;
     bottom: -2px;
@@ -77,67 +80,70 @@ nav a.active::after {
     width: 100%;
 }
 
+/* Estilos para o conteúdo principal (main) */
 main {
     text-align: center;
-    flex: 1;
+    flex: 1; /* Ocupa o espaço restante verticalmente */
 }
 
+/* Estilos para a seção 'Sobre' */
 .backSobre {
     background-image: url('/img/pixelcut-export.png');
-    padding: 10em 0 0;
+    padding: 10em 0 0; /* Preenchimento da seção 'Sobre' */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 .sobre {
     display: flex;
     justify-content: space-around;
-    width: 50em;
-    margin: 0 auto;
+    width: 50em; /* Largura máxima da seção 'Sobre' */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-.sobre>img {
-    height: 30em;
+.sobre > img {
+    height: 30em; /* Altura da imagem de perfil */
 }
 
 .infoSobre {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); /* Cor de fundo da caixa de informações */
     align-items: center;
-    padding: 3em;
-    width: 20em;
+    padding: 3em; /* Preenchimento interno da caixa de informações */
+    width: 20em; /* Largura da caixa de informações */
 }
 
+/* Estilos para a seção de redes sociais */
 .backSocial {
     display: flex;
     justify-content: center;
 }
 
 .social {
-    background-color: rgb(128, 40, 26);
+    background-color: rgb(128, 40, 26); /* Cor de fundo da seção de redes sociais */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 770px;
-    height: 2em;
-    padding: 1em;
+    width: 770px; /* Largura máxima da seção de redes sociais */
+    height: 2em; /* Altura da seção de redes sociais */
+    padding: 1em; /* Preenchimento interno */
 }
 
-.social>a {
-    margin: 0 1em
+.social > a {
+    margin: 0 1em; /* Margem entre */
 }
 
+/* Estilos para o rodapé (footer) */
 footer {
-    height: 4em;
+    height: 4em; /* Altura do rodapé */
     display: flex;
-    justify-content: space-around;
-    box-shadow: 0 -2px 3px -2px #4b4a52;
+    justify-content: space-around; /* Alinha itens do rodapé */
+    box-shadow: 0 -2px 3px -2px #4b4a52; /* Sombra na parte inferior do rodapé */
     align-items: center;
 }
 
-footer>p {
-    color: rgb(183, 187, 187);
-    font-size: 14px;
-    text-align: center;
+footer > p {
+    color: rgb(183, 187, 187); /* Cor do texto do rodapé */
+    font-size: 14px; /* Tamanho da fonte do texto do rodapé */
+    text-align: center; /* Alinhamento do texto do rodapé */
 }

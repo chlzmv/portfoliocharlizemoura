@@ -1,49 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Definição de estilos globais */
 *{  
     font-family: "Mulish", sans-serif;
     letter-spacing: 0.6px;
-    
 }
-body{
+
+body {
     height: 100%;
     margin: 0;
 }
 
-
-li, a{
+li, a {
     list-style-type: none;  
     color: black; 
     text-decoration: none; 
 }
 
-h1{
-     color:rgb(128,40,26);
-     font-family: "Noto Sans JP", sans-serif;
-     font-weight: 500;
-} 
+h1 {
+    color: rgb(128,40,26);
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+}
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Garante que o wrapper ocupe toda a altura da viewport */
 }
 
-
-header>nav{
+/* Header */
+header>nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    box-shadow: 0 2px 3px -2px #4b4a52;
+    box-shadow: 0 2px 3px -2px #4b4a52; /* Sombra inferior no header */
 }
 
-nav>ul{
+nav>ul {
     display: flex;
 }
 
-nav>ul>li{
-    margin: 0 1em;
+nav>ul>li {
+    margin: 0 1em; /* Espaçamento entre itens do menu */
 }
 
 nav a {
@@ -56,8 +56,8 @@ nav a::after {
     display: block;
     width: 0;
     height: 2px;
-    background:rgb(128,40,26);;
-    transition: width 0.3s;
+    background: rgb(128,40,26);
+    transition: width 0.3s; /* Animação suave na largura */
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -65,71 +65,70 @@ nav a::after {
 
 nav a:hover::after,
 nav a.active::after {
-    width: 100%;
+    width: 100%; /* Sub-linha visível ao passar o mouse ou quando ativo */
 }
 
-main{
+/* Main */
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+    flex: 1; /* Faz o main ocupar o espaço disponível */
 }
 
-main h1{
+main h1 {
     font-weight: 600;
     text-align: center;
     margin: 2em 0;
-    
 }
 
-
-.mensagem{
+.mensagem {
     display: flex;
     flex-direction: column;
-    width: 30em;
+    width: 30em; /* Largura fixa do formulário */
 }
 
-h2{
+h2 {
     text-align: left;
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 500;
+}
 
+.mensagem>p {
+    margin: -0.7em 0 2em; /* Margem personalizada para o parágrafo */
 }
-.mensagem>p{
-    margin: -0.7em 0 2em;
-}
-label, input, textarea{
-    margin: 0.7em 0;
+
+label, input, textarea {
+    margin: 0.7em 0; /* Espaçamento entre elementos do formulário */
 }
 
 input {
     height: 2em;
     border: none;
-    border-bottom: 1px solid rgb(150, 150, 150);
+    border-bottom: 1px solid rgb(150, 150, 150); /* Apenas borda inferior */
 }
 
-textarea{
-
-    border: 1px solid  rgb(150, 150, 150);
+textarea {
+    border: 1px solid rgb(150, 150, 150); /* Borda completa para textarea */
 }
 
-#enviar{
+#enviar {
     width: 7em;
     height: 2em;
     margin: 3em 0;
     background-color: rgb(128,40,26);
     color: rgb(255, 255, 255);
-    border-color:  rgb(128,40,26) ;
+    border-color: rgb(128,40,26);
     font-size: 15px;
-    float: right;
+    float: right; /* Alinha o botão à direita */
 }
 
-
-footer{
+/* Footer */
+footer {
     height: 4em;
     display: flex;
     justify-content: space-around;
-    box-shadow: 0 -2px 3px -2px #4b4a52;
+    box-shadow: 0 -2px 3px -2px #4b4a52; /* Sombra superior no footer */
 }
 
 footer>p {
