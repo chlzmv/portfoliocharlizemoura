@@ -1,34 +1,45 @@
+/* Importação de fontes do Google Fonts para Mulish e Libre Franklin */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/* Definição de estilos globais */
-*{  
-    font-family: "Mulish", sans-serif;
-    letter-spacing: 0.6px;
+/* Estilos globais */
+* {
+    font-family: "Mulish", sans-serif; /* Define a fonte padrão para todo o documento */
+    letter-spacing: 0.6px; /* Espaçamento entre letras */
 }
 
+/* Reset de estilos para body */
 body {
-    height: 100%;
-    margin: 0;
+    height: 100%; /* Ocupa toda a altura da viewport */
+    margin: 0; /* Remove margens padrão */
 }
 
+/* Reset de estilos para listas e links */
 li, a {
-    list-style-type: none;  
-    color: black; 
-    text-decoration: none; 
+    list-style-type: none; /* Remove marcadores de lista */
+    color: black; /* Cor padrão para links */
+    text-decoration: none; /* Remove sublinhado padrão de links */
 }
 
-h1 {
-    color: rgb(128,40,26);
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 500;
+/* Estilos para cabeçalhos */
+h1, h2 {
+    color: rgb(128, 40, 26); /* Cor específica para cabeçalhos */
+    font-family: "Noto Sans JP", sans-serif; /* Fonte para cabeçalhos */
+    font-weight: 500; /* Peso da fonte */
 }
 
+/* Estilos para ícones */
+i {
+    color: rgb(250, 250, 250); /* Cor para ícones */
+}
+
+/* Wrapper principal */
 .wrapper {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Garante que o wrapper ocupe toda a altura da viewport */
+    flex-direction: column; /* Organiza conteúdo em coluna */
+    min-height: 100vh; /* Altura mínima igual à altura da viewport */
 }
+
 
 /* Header */
 header>nav {
@@ -68,7 +79,7 @@ nav a.active::after {
     width: 100%; /* Sub-linha visível ao passar o mouse ou quando ativo */
 }
 
-/* Main */
+
 main {
     display: flex;
     flex-direction: column;
@@ -94,34 +105,6 @@ h2 {
     font-weight: 500;
 }
 
-.mensagem>p {
-    margin: -0.7em 0 2em; /* Margem personalizada para o parágrafo */
-}
-
-label, input, textarea {
-    margin: 0.7em 0; /* Espaçamento entre elementos do formulário */
-}
-
-input {
-    height: 2em;
-    border: none;
-    border-bottom: 1px solid rgb(150, 150, 150); /* Apenas borda inferior */
-}
-
-textarea {
-    border: 1px solid rgb(150, 150, 150); /* Borda completa para textarea */
-}
-
-#enviar {
-    width: 7em;
-    height: 2em;
-    margin: 3em 0;
-    background-color: rgb(128,40,26);
-    color: rgb(255, 255, 255);
-    border-color: rgb(128,40,26);
-    font-size: 15px;
-    float: right; /* Alinha o botão à direita */
-}
 
 /* Estilos para o rodapé (footer) */
 footer {
