@@ -20,6 +20,8 @@ li, a{
 
 h1{
      color:rgb(128,40,26);
+     font-family: "Noto Sans JP", sans-serif;
+     font-weight: 500;
 } 
 
 .wrapper {
@@ -73,34 +75,53 @@ main{
     flex: 1;
 }
 
-
-.titulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.titulo>h1{
-    color:rgb(128,40,26);
-}
-
-.titulo>p{
-    width: 20em;
+main h1{
+    font-weight: 600;
+    text-align: center;
+    margin: 2em 0;
     
 }
+
+
 .mensagem{
     display: flex;
     flex-direction: column;
     width: 30em;
 }
 
-label, input{
-    margin: 0.5em 0;
+h2{
+    text-align: left;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+
+}
+.mensagem>p{
+    margin: -0.7em 0 2em;
+}
+label, input, textarea{
+    margin: 0.7em 0;
+}
+
+input {
+    height: 2em;
+    border: none;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+textarea{
+
+    border: 1px solid  rgb(150, 150, 150);
 }
 
 #enviar{
-    width: 5em;
-    margin: 0.5em 0;
+    width: 7em;
+    height: 2em;
+    margin: 3em 0;
+    background-color: rgb(128,40,26);
+    color: rgb(255, 255, 255);
+    border-color:  rgb(128,40,26) ;
+    font-size: 15px;
+    float: right;
 }
 
 
