@@ -93,16 +93,39 @@ main h1 {
     margin: 2em 0;
 }
 
-.mensagem {
-    display: flex;
-    flex-direction: column;
-    width: 30em; /* Largura fixa do formulário */
-}
-
 h2 {
+    
     text-align: left;
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 500;
+}
+
+.info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info>p{
+    max-width: 50em;
+
+}
+
+.infoInf {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 50em;
+    
+}
+
+.hard {
+    max-width: 20em;
+}
+
+.soft {
+    max-width: 20em;
 }
 
 

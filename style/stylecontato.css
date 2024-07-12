@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/* Definição de estilos globais */
-*{  
-    font-family: "Mulish", sans-serif;
-    letter-spacing: 0.6px;
+/* Estilos globais */
+* {
+    font-family: "Mulish", sans-serif; /* Define a fonte padrão para todo o documento */
+    letter-spacing: 0.6px; /* Espaçamento entre letras */
 }
 
+/* Reset de estilos para body */
 body {
-    height: 100%;
-    margin: 0;
+    height: 100%; /* Ocupa toda a altura da viewport */
+    margin: 0; /* Remove margens padrão */
 }
+
 
 li, a {
     list-style-type: none;  
