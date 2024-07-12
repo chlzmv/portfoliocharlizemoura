@@ -89,7 +89,7 @@ main {
 
 /* Estilos para a seção 'Sobre' */
 .backSobre {
-    background-image: url('../img/pixelcut-export.png');
+    background-image: url('img/pixelcut-export.png');
     padding: 10em 0 0; /* Preenchimento da seção 'Sobre' */
     background-size: cover;
     background-repeat: no-repeat;
