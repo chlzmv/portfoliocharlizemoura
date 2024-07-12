@@ -40,7 +40,6 @@ i {
     min-height: 100vh; /* Altura mínima igual à altura da viewport */
 }
 
-
 /* Header */
 header>nav {
     display: flex;
@@ -49,19 +48,22 @@ header>nav {
     box-shadow: 0 2px 3px -2px #4b4a52; /* Sombra inferior no header */
 }
 
+/* Estilos para a lista de navegação */
 nav>ul {
-    display: flex;
+    display: flex; /* Exibe os itens da lista em linha */
 }
 
 nav>ul>li {
     margin: 0 1em; /* Espaçamento entre itens do menu */
 }
 
+/* Estilos para links de navegação */
 nav a {
     position: relative;
     padding: 5px 0;
 }
 
+/* Estilos para a sub-linha animada nos links de navegação */
 nav a::after {
     content: '';
     display: block;
@@ -74,12 +76,13 @@ nav a::after {
     left: 0;
 }
 
+/* Sub-linha visível ao passar o mouse ou quando ativo */
 nav a:hover::after,
 nav a.active::after {
-    width: 100%; /* Sub-linha visível ao passar o mouse ou quando ativo */
+    width: 100%;
 }
 
-
+/* Estilos para o conteúdo principal */
 main {
     display: flex;
     flex-direction: column;
@@ -87,24 +90,50 @@ main {
     flex: 1; /* Faz o main ocupar o espaço disponível */
 }
 
+/* Estilos para o título principal dentro do main */
 main h1 {
     font-weight: 600;
     text-align: center;
-    margin: 2em 0;
+    margin: 2em 0 1em;
 }
 
-.mensagem {
+/* Estilos para a seção de informações */
+.info {
     display: flex;
     flex-direction: column;
-    width: 30em; /* Largura fixa do formulário */
+    width: 30em; /* Largura fixa da seção de informações */
+    border-top: 2px solid rgb(128,40,26);
+    padding: 2em 0;
 }
 
+/* Estilos específicos para o cabeçalho h2 */
 h2 {
-    text-align: left;
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 500;
+    text-align: left; /* Alinha o texto à esquerda */
+    font-family: "Noto Sans JP", sans-serif; /* Fonte para cabeçalhos */
+    font-weight: 500; /* Peso da fonte */
+    margin: 1em 0 0.5em; /* Margens em torno do cabeçalho */
 }
 
+/* Estilos para cada formação */
+.formac {
+    border-bottom: 1px solid rgb(150, 150, 150); /* Borda inferior */
+    margin: 0 1em; /* Margens laterais */
+}
+
+/* Remove a borda inferior do último item de formação */
+.formac:last-child {
+    border-bottom: none;
+}
+
+/* Estilos para links dentro da formação */
+.formac>a {
+    font-weight: 800; /* Peso da fonte */
+}
+
+/* Estilos para parágrafos dentro da formação */
+.formac>p {
+    margin: 0.5em 0; /* Margens em torno dos parágrafos */
+}
 
 /* Estilos para o rodapé (footer) */
 footer {
@@ -115,6 +144,7 @@ footer {
     align-items: center;
 }
 
+/* Estilos para o parágrafo dentro do rodapé */
 footer > p {
     color: rgb(183, 187, 187); /* Cor do texto do rodapé */
     font-size: 14px; /* Tamanho da fonte do texto do rodapé */

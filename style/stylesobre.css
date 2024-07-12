@@ -40,7 +40,6 @@ i {
     min-height: 100vh; /* Altura mínima igual à altura da viewport */
 }
 
-
 /* Header */
 header>nav {
     display: flex;
@@ -49,19 +48,22 @@ header>nav {
     box-shadow: 0 2px 3px -2px #4b4a52; /* Sombra inferior no header */
 }
 
+/* Estilos para a lista de navegação */
 nav>ul {
-    display: flex;
+    display: flex; /* Exibe os itens da lista em linha */
 }
 
 nav>ul>li {
     margin: 0 1em; /* Espaçamento entre itens do menu */
 }
 
+/* Estilos para links de navegação */
 nav a {
     position: relative;
     padding: 5px 0;
 }
 
+/* Estilos para a sub-linha animada nos links de navegação */
 nav a::after {
     content: '';
     display: block;
@@ -74,12 +76,13 @@ nav a::after {
     left: 0;
 }
 
+/* Sub-linha visível ao passar o mouse ou quando ativo */
 nav a:hover::after,
 nav a.active::after {
-    width: 100%; /* Sub-linha visível ao passar o mouse ou quando ativo */
+    width: 100%;
 }
 
-
+/* Estilos para o conteúdo principal */
 main {
     display: flex;
     flex-direction: column;
@@ -87,60 +90,69 @@ main {
     flex: 1; /* Faz o main ocupar o espaço disponível */
 }
 
+/* Estilos para o título principal dentro do main */
 main h1 {
     font-weight: 600;
     text-align: center;
     margin: 2em 0 1em;
 }
 
+/* Estilos para o cabeçalho H2 */
 h2 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 500;
+    color: rgb(255, 255, 255); /* Cor do texto do cabeçalho H2 */
+    text-align: center; /* Alinhamento centralizado */
+    font-family: "Noto Sans JP", sans-serif; /* Fonte para cabeçalhos */
+    font-weight: 500; /* Peso da fonte */
 }
 
-.info{
-    width: 70%;
+/* Estilos para a seção de informações */
+.info {
+    width: 70%; /* Largura da seção de informações */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.texto{
-    padding: 2em 0;
-    border-top: 2px solid rgb(128,40,26); /* Apenas borda inferior */
-}
-.texto>p{
-    max-width: 50em;
-    text-indent: 2em;
-    margin: 3px;
-    text-align: justify
+
+/* Estilos para a seção de texto */
+.texto {
+    padding: 2em 0; /* Espaçamento interno superior e inferior */
+    border-top: 2px solid rgb(128,40,26); /* Borda superior */
 }
 
+/* Estilos para parágrafos dentro da seção de texto */
+.texto>p {
+    max-width: 50em; /* Largura máxima dos parágrafos */
+    text-indent: 2em; /* Recuo da primeira linha */
+    margin: 3px; /* Margem ao redor dos parágrafos */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Estilos para a seção de informações adicionais */
 .infoInf {
     display: flex;
-    max-width: 50em;
-    margin: 0 0 4em 0;
+    max-width: 50em; /* Largura máxima da seção */
+    margin: 0 0 4em 0; /* Margem inferior */
 }
 
-.hard, .soft{
-    padding: 0 2em 1em;
-    max-width: 20em;
-    background-color:rgb(128,40,26);
-    border-radius: 20px;
+/* Estilos para as seções de habilidades */
+.hard, .soft {
+    padding: 0 2em 1em; /* Espaçamento interno */
+    max-width: 20em; /* Largura máxima */
+    background-color: rgb(128,40,26); /* Cor de fundo */
+    border-radius: 20px; /* Bordas arredondadas */
 }
 
-.soft{
+/* Margem à esquerda para a seção de habilidades soft */
+.soft {
     margin-left: 2em;
 }
 
-ul>li, ul>li{
-    margin: 0 0 5px;
-    color: rgb(255, 255, 255);
-    
+/* Estilos para itens de lista dentro das seções de habilidades */
+ul>li, ul>li {
+    margin: 0 0 5px; /* Margem inferior */
+    color: rgb(255, 255, 255); /* Cor do texto */
 }
-
 
 /* Estilos para o rodapé (footer) */
 footer {
@@ -151,6 +163,7 @@ footer {
     align-items: center;
 }
 
+/* Estilos para o parágrafo dentro do rodapé */
 footer > p {
     color: rgb(183, 187, 187); /* Cor do texto do rodapé */
     font-size: 14px; /* Tamanho da fonte do texto do rodapé */
